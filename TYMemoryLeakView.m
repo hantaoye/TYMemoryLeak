@@ -31,7 +31,7 @@
     }
     TYMemoryLeakView *view = [[self alloc] initWithFrame:CGRectMake(20, 40, 300, 60)];
     view.backgroundColor = [UIColor colorWithWhite:0.3 alpha:0.5];
-    [[UIApplication sharedApplication].keyWindow addSubview:view];
+    superview addSubview:view];
     [UIView memoryLeakHook];
 #endif
 }
